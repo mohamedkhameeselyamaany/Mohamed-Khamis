@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Mohamed-Khamis/static/css/main.b05e4d20.css",
-    "main.js": "/Mohamed-Khamis/static/js/main.f2ef592c.js",
+    "main.css": "/Mohamed-Khamis/static/css/main.49f35a42.css",
+    "main.js": "/Mohamed-Khamis/static/js/main.d46111d8.js",
     "static/media/profile3.png": "/Mohamed-Khamis/static/media/profile3.bc6e08277091907ad329.png",
     "static/media/profile.png": "/Mohamed-Khamis/static/media/profile.34d9984054c751ba5616.png",
     "static/media/Mohamed_Khamis_CV.pdf": "/Mohamed-Khamis/static/media/Mohamed_Khamis_CV.66a637931b1c4241ea19.pdf",
     "index.html": "/Mohamed-Khamis/index.html",
-    "main.b05e4d20.css.map": "/Mohamed-Khamis/static/css/main.b05e4d20.css.map",
-    "main.f2ef592c.js.map": "/Mohamed-Khamis/static/js/main.f2ef592c.js.map"
+    "main.49f35a42.css.map": "/Mohamed-Khamis/static/css/main.49f35a42.css.map",
+    "main.d46111d8.js.map": "/Mohamed-Khamis/static/js/main.d46111d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.b05e4d20.css",
-    "static/js/main.f2ef592c.js"
+    "static/css/main.49f35a42.css",
+    "static/js/main.d46111d8.js"
   ]
 }
