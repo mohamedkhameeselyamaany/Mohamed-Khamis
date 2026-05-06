@@ -55,7 +55,7 @@ const Projects = () => {
             >
               <div className="project-image">
                 <img
-                  src={project.image.startsWith("http") ? project.image : `/images/${project.image}`}
+                  src={project.image.startsWith("http") ? project.image : `${process.env.PUBLIC_URL}/images/${project.image}`}
                   alt={lang === "ar" ? project.title : project.titleEn}
                   loading="lazy"
                 />
