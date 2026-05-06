@@ -1,7 +1,6 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "homepage": "https://mohamedkhameeselyamaany.github.io/Mohamed-Khamis",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
