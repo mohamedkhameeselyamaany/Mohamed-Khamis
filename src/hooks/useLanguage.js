@@ -1,4 +1,4 @@
-﻿import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const LanguageContext = createContext(null);
 
@@ -38,6 +38,7 @@ const translations = {
     contactTag: "تواصل معي",
     contactTitle: "لنبدأ مشروعاً جديداً",
     contactDesc: "هل لديك فكرة مشروع أو تريد التعاون؟ أنا دائماً منفتح على الفرص الجديدة. تواصل معي وسأرد عليك في أقرب وقت.",
+    contactFormTitle: "نموذج التواصل 📝",
     email: "البريد الإلكتروني",
     phone: "الهاتف",
     location: "الموقع",
@@ -92,8 +93,7 @@ const translations = {
     code: "💻 Source Code",
     contactTag: "Get In Touch",
     contactTitle: "Let's Start a New Project",
-    contactDesc: "Have a project idea or want to collaborate? I'm always open to new opportunities. Reach out and I'll get back to you soon.",
-    email: "Email",
+    contactDesc: "Have a project idea or want to collaborate? I'm always open to new opportunities. Reach out and I'll get back to you soon.",    contactFormTitle: "Contact Form 📝",    email: "Email",
     phone: "Phone",
     location: "Location",
     name: "Name",

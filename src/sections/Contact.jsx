@@ -134,6 +134,17 @@ const Contact = () => {
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>
+            {/* عنوان الفورم */}
+            <div className="form-header">
+              <h3 className="form-title">{t.contactFormTitle}</h3>
+              <p className="form-subtitle">
+                {lang === "ar" 
+                  ? "املأ البيانات التالية وسأتواصل معك في أقرب وقت ممكن 📧" 
+                  : "Fill in the details below and I'll get back to you as soon as possible 📧"
+                }
+              </p>
+            </div>
+
             {submitted && <div className="success-message">{t.success}</div>}
             {error && <div className="error-message">{error}</div>}
             

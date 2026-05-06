@@ -125,7 +125,7 @@ export const projects = [
     titleEn: "weding-invitation ",
     description: "موقع دعوة زفاف إلكتروني مصمم بأسلوب أنيق وعصري لتقديم تفاصيل الحفل بطريقة مميزة وسهلة. يتيح للمدعوين التعرف على موعد ومكان المناسبة، ومشاركة أجمل اللحظات في تصميم راقٍ يعكس فرحة الحدث ويمنح الدعوة طابعًا عصريًا لا يُنسى.",
     descriptionEn: "An elegantly designed and modern wedding invitation website to present the details of the event in a distinctive and easy way. It allows guests to learn the date and location of the occasion and share the most beautiful moments in a sophisticated design that reflects the joy of the event and gives the invitation a modern and unforgettable character.",
-    image: "invitation2.jpeg",
+    image: "invtation.jpeg",
     tags: ["HTML", "CSS", "JavaScript" ,"Responsive"],
     liveUrl: "  https://mohamedkhameeselyamaany.github.io/weding-invitation/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/weding-invitation.git",
