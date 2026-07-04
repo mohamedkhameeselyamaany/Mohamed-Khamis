@@ -132,23 +132,30 @@ export const projects = [
     category: "frontend"
   },
 
-
-
   {
     id: 12,
-    title: "موقع لدعوه زفاف",
-    titleEn: "wedding-invitation",
+    title: "موقع لدعوه قرح",
+    titleEn: "weding-invitation ",
     description: "موقع دعوة زفاف إلكتروني مصمم بأسلوب أنيق وعصري لتقديم تفاصيل الحفل بطريقة مميزة وسهلة. يتيح للمدعوين التعرف على موعد ومكان المناسبة، ومشاركة أجمل اللحظات في تصميم راقٍ يعكس فرحة الحدث ويمنح الدعوة طابعًا عصريًا لا يُنسى.",
     descriptionEn: "An elegantly designed and modern wedding invitation website to present the details of the event in a distinctive and easy way. It allows guests to learn the date and location of the occasion and share the most beautiful moments in a sophisticated design that reflects the joy of the event and gives the invitation a modern and unforgettable character.",
-    image: "invitation2.jpeg",
+    image: "invtation.jpeg",
     tags: ["HTML", "CSS", "JavaScript" ,"Responsive"],
-    liveUrl: " https://mohamedkhameeselyamaany.github.io/wedding-invitation/",
-    githubUrl: "https://github.com/mohamedkhameeselyamaany/wedding-invitation.git",
+    liveUrl: "  https://mohamedkhameeselyamaany.github.io/weding-invitation/",
+    githubUrl: "https://github.com/mohamedkhameeselyamaany/weding-invitation.git",
+    category: "frontend"
+  },
+
+  {
+    id: 13,
+    title: "🏠 موقع نقل أثاث وموبيليا",
+    titleEn: "Furniture moving",
+    description: "موقع إلكتروني احترافي متخصص في خدمات نقل الأثاث والموبيليا، مصمم بواجهة حديثة وسريعة الاستجابة، ويغطي جميع خدمات نقل العفش المتعارف عليها في السوق، مع تجربة مستخدم سلسة تسهّل على العملاء طلب الخدمة والتواصل بسهولة.",
+    descriptionEn: "A professional website specializing in furniture moving services, designed with a modern and responsive interface, covering all the furniture moving services known in the market, with a smooth user experience that makes it easy for customers to request the service and communicate easily.",
+    image: "Furniture moving.jpg",
+    tags: ["React.js", "React Router", "HTML5 "," Progressive Web App (PWA)", "JavaScript(ES6+)" ,"Responsive Design"],
+    liveUrl: " https://mohamedkhameeselyamaany.github.io/Furniture-moving/",
+    githubUrl: "https://github.com/mohamedkhameeselyamaany/Furniture-moving.git",
     category: "frontend"
   }
-
-
-
-
 
 ];
