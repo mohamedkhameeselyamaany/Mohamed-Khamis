@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.172a116b.css",
-    "main.js": "/static/js/main.6ccf9da0.js",
-    "static/media/profile3.png": "/static/media/profile3.bc6e08277091907ad329.png",
-    "static/media/profile.png": "/static/media/profile.34d9984054c751ba5616.png",
-    "static/media/Mohamed_Khamis_CV.pdf": "/static/media/Mohamed_Khamis_CV.66a637931b1c4241ea19.pdf",
-    "index.html": "/index.html",
-    "main.172a116b.css.map": "/static/css/main.172a116b.css.map",
-    "main.6ccf9da0.js.map": "/static/js/main.6ccf9da0.js.map"
+    "main.css": "/Mohamed-Khamis/static/css/main.172a116b.css",
+    "main.js": "/Mohamed-Khamis/static/js/main.12b3a6c6.js",
+    "static/media/profile3.png": "/Mohamed-Khamis/static/media/profile3.bc6e08277091907ad329.png",
+    "static/media/profile.png": "/Mohamed-Khamis/static/media/profile.34d9984054c751ba5616.png",
+    "static/media/Mohamed_Khamis_CV.pdf": "/Mohamed-Khamis/static/media/Mohamed_Khamis_CV.66a637931b1c4241ea19.pdf",
+    "index.html": "/Mohamed-Khamis/index.html",
+    "main.172a116b.css.map": "/Mohamed-Khamis/static/css/main.172a116b.css.map",
+    "main.12b3a6c6.js.map": "/Mohamed-Khamis/static/js/main.12b3a6c6.js.map"
   },
   "entrypoints": [
     "static/css/main.172a116b.css",
-    "static/js/main.6ccf9da0.js"
+    "static/js/main.12b3a6c6.js"
   ]
 }
