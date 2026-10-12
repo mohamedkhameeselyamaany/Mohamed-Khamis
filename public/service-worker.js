@@ -26,14 +26,16 @@ const CACHE = {
   runtime: `runtime-${SW_VERSION}`,
 };
 
-const OFFLINE_URL = "/offline.html";
+const BASE_PATH = new URL("./", self.location.href).href;
+const OFFLINE_URL = new URL("offline.html", BASE_PATH).href;
 const APP_SHELL_URLS = [
-  "/",
+  BASE_PATH,
   OFFLINE_URL,
-  "/manifest.json",
-  "/favicon1.ico",
-  "/logo.png",
-  "/robots.txt",
+  new URL("manifest.json", BASE_PATH).href,
+  new URL("favicon1.ico", BASE_PATH).href,
+  new URL("logo.png", BASE_PATH).href,
+  new URL("logo192.png", BASE_PATH).href,
+  new URL("robots.txt", BASE_PATH).href,
 ];
 
 // Helpers
@@ -150,7 +152,9 @@ self.addEventListener("fetch", (event) => {
           const cached = await cacheMatch(CACHE.html, req, false);
           if (cached) return cached;
 
-          const offline = await caches.open(CACHE.appShell).then((c) => c.match(OFFLINE_URL));
+          const offline = await caches
+            .open(CACHE.appShell)
+            .then(async (c) => (await c.match(OFFLINE_URL)) || (await c.match("/offline.html")));
           return offline || Response.error();
         }
       })()

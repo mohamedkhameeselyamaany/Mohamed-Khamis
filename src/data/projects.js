@@ -121,7 +121,7 @@ export const projects = [
   },
   {
     id: 11,
-    title: "موقع لدعوه قرح",
+    title: "موقع لدعوه فرح",
     titleEn: "weding-invitation ",
     description: "موقع دعوة زفاف إلكتروني مصمم بأسلوب أنيق وعصري لتقديم تفاصيل الحفل بطريقة مميزة وسهلة. يتيح للمدعوين التعرف على موعد ومكان المناسبة، ومشاركة أجمل اللحظات في تصميم راقٍ يعكس فرحة الحدث ويمنح الدعوة طابعًا عصريًا لا يُنسى.",
     descriptionEn: "An elegantly designed and modern wedding invitation website to present the details of the event in a distinctive and easy way. It allows guests to learn the date and location of the occasion and share the most beautiful moments in a sophisticated design that reflects the joy of the event and gives the invitation a modern and unforgettable character.",
@@ -134,7 +134,7 @@ export const projects = [
 
   {
     id: 12,
-    title: "موقع لدعوه قرح",
+    title: "موقع لدعوه فرح",
     titleEn: "weding-invitation ",
     description: "موقع دعوة زفاف إلكتروني مصمم بأسلوب أنيق وعصري لتقديم تفاصيل الحفل بطريقة مميزة وسهلة. يتيح للمدعوين التعرف على موعد ومكان المناسبة، ومشاركة أجمل اللحظات في تصميم راقٍ يعكس فرحة الحدث ويمنح الدعوة طابعًا عصريًا لا يُنسى.",
     descriptionEn: "An elegantly designed and modern wedding invitation website to present the details of the event in a distinctive and easy way. It allows guests to learn the date and location of the occasion and share the most beautiful moments in a sophisticated design that reflects the joy of the event and gives the invitation a modern and unforgettable character.",
@@ -156,6 +156,19 @@ export const projects = [
     liveUrl: " https://mohamedkhameeselyamaany.github.io/Furniture-moving/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/Furniture-moving.git",
     category: "frontend"
+  },
+
+   {
+    id: 14,
+    title: "موقع دأب",
+    titleEn: "Daab",
+    description: "موقع دأب  هي شركة حلول تجارية وصناعية سعودية، تربط الأعمال والموارد والفرص من خلال شراكات موثوقة وحلول عملية وفهم عميق للسوق المحلي. (حلول عملية | طموح إقليمي | جذور محلية في السعودية) ",
+    descriptionEn: "Daab is a Saudi commercial and industrial solutions company that connects businesses, resources, and opportunities through trusted partnerships, practical solutions, and a deep understanding of the local market. (Practical solutions | Regional ambition | Local roots in Saudi Arabia)",
+    image: "daab.jpg",
+    tags: [ "Next.js","React.js", "React Router", "HTML5 ", "JavaScript(ES6+)" ,"Responsive Design","Tailwind Css"],
+    liveUrl: " https://daab.sa",
+    githubUrl: "https://daab.sa",
+    category: "Fullstack"
   }
 
 ];

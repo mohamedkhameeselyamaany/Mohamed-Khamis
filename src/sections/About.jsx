@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "../hooks/useLanguage";
+import TypewriterText from "../components/TypewriterText";
 import cvFile from "../assets/Mohamed_Khamis_CV.pdf";
 import profileImg from "../assets/profile3.png";
+import { FileText } from "lucide-react";
 import "../styles/about.css";
 
 const About = () => {
@@ -11,7 +13,7 @@ const About = () => {
 
   const skills = [
     "React.js", "Next.js", "TypeScript", "JavaScript (ES6+)",
-    "Tailwind CSS", "Node.js","GitHub" ,"Git", "Figma", "UI/UX Design"
+    "Tailwind CSS", "Node.js", "GitHub", "Git", "Figma", "UI/UX Design"
   ];
 
   useEffect(() => {
@@ -56,7 +58,10 @@ const About = () => {
           </div>
           
           <div className={`about-text ${isVisible ? "animate-in" : ""}`}>
-            <h3>{t.aboutRole}</h3>
+            <h3 className="about-name">
+              <TypewriterText text={t.aboutName} startTrigger={isVisible} speed={65} delay={200} />
+            </h3>
+            <h4 className="about-role-title">{t.aboutRole}</h4>
             <p>{t.aboutText1}</p>
             <p>{t.aboutText2}</p>
             
@@ -73,8 +78,8 @@ const About = () => {
             </div>
             
             <button type="button" onClick={openCV} className="btn btn-primary">
-              <span className="btn-icon">📄</span>
-              {t.downloadCV}
+              <FileText size={18} strokeWidth={2.2} className="btn-icon" />
+              <span>{t.downloadCV}</span>
             </button>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "../hooks/useLanguage";
+import { Code2, Wrench, Palette } from "lucide-react";
 import "../styles/skills.css";
 
 const Skills = () => {
@@ -10,7 +11,7 @@ const Skills = () => {
   const skillCategories = [
     {
       title: t.frontend,
-      icon: "🎨",
+      icon: <Code2 size={24} strokeWidth={2.2} />,
       color: "linear-gradient(135deg, #6366f1, #8b5cf6)",
       skills: [
         { name: "React.js", level: 95 },
@@ -23,7 +24,7 @@ const Skills = () => {
     },
     {
       title: t.tools,
-      icon: "⚙️",
+      icon: <Wrench size={24} strokeWidth={2.2} />,
       color: "linear-gradient(135deg, #06b6d4, #3b82f6)",
       skills: [
         { name: "Git & GitHub", level: 92 },
@@ -36,7 +37,7 @@ const Skills = () => {
     },
     {
       title: t.design,
-      icon: "✨",
+      icon: <Palette size={24} strokeWidth={2.2} />,
       color: "linear-gradient(135deg, #ec4899, #f43f5e)",
       skills: [
         { name: "Figma", level: 94 },

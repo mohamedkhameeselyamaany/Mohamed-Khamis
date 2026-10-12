@@ -1,0 +1,411 @@
+/* ==========================================================================
+   Footer Styles - Pure Mobile-First Responsive Design
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Base Mobile Styles (Default: Mobile < 768px, down to 320px)
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg) 100%);
+  border-top: 1px solid var(--border);
+  padding: 2.25rem 1rem 1.75rem 1rem;
+  color: var(--text-muted);
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.site-footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* --- Verse & Quote Section (Base: Mobile) --- */
+.footer-quote-section {
+  text-align: center;
+  width: 100%;
+  max-width: min(960px, 94vw);
+  margin-inline: auto;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  box-sizing: border-box;
+}
+
+.footer-quote-text {
+  /* Fluid typography scaling gracefully from small phones to desktop */
+  font-size: clamp(0.92rem, 1.6vw + 0.45rem, 1.15rem);
+  font-weight: 600;
+  color: var(--primary-light);
+  line-height: clamp(1.68, 2.2vw, 1.95);
+  margin-bottom: 0.55rem;
+  text-wrap: balance;
+  letter-spacing: -0.1px;
+}
+
+[dir="rtl"] .footer-quote-text {
+  font-family: var(--font-ar);
+}
+
+[dir="ltr"] .footer-quote-text {
+  font-family: var(--font-en);
+}
+
+.footer-thanks-text {
+  font-size: clamp(0.85rem, 1.1vw + 0.45rem, 0.95rem);
+  color: var(--text-muted);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* --- Mirrored Navbar Section (Base: Mobile) --- */
+.footer-navbar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  width: 100%;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Scaled-down footer logo */
+.footer-logo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  color: var(--text);
+  min-height: 44px; /* Touch target accessibility */
+  padding: 0 0.5rem;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+  user-select: none;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+  color: var(--primary-light);
+}
+
+.footer-logo .logo-bracket {
+  color: var(--primary);
+  font-weight: 300;
+}
+
+/* Mirrored Nav Links (Base: Mobile clean wrapping with 44px touch targets) */
+.footer-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem 0.65rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.footer-nav-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.88rem;
+  min-height: 44px; /* Minimum 44x44px touch target requirement */
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.65rem;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.footer-nav-link:hover {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.footer-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+[dir="ltr"] .footer-nav-link::after {
+  right: auto;
+  left: 0;
+}
+
+.footer-nav-link:hover::after {
+  width: 100%;
+}
+
+/* Mirrored Action Buttons */
+.footer-nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.footer-nav-actions .lang-toggle,
+.footer-nav-actions .theme-toggle {
+  min-width: 44px; /* Minimum 44x44px touch target requirement */
+  min-height: 44px;
+  width: 44px;
+  height: 44px;
+}
+
+/* --- Branding & Copyright Section (Base: Mobile < 768px - Centered Layout) --- */
+.footer-bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-brand-name {
+  font-size: clamp(1.02rem, 1.2vw + 0.55rem, 1.15rem);
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+
+.footer-brand-name strong {
+  color: var(--primary-light);
+  font-weight: 800;
+}
+
+.footer-brand-title {
+  font-size: clamp(0.82rem, 0.9vw + 0.45rem, 0.9rem);
+  color: var(--text-muted);
+  font-weight: 500;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.footer-bottom-extra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  font-weight: 500;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   2. Tablet View: (min-width: 768px and up to 1023px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  .site-footer {
+    padding: 2.75rem 1.5rem 2rem 1.5rem;
+  }
+
+  .site-footer .footer-container {
+    gap: 1.75rem;
+  }
+
+  .footer-quote-section {
+    padding-bottom: 1.75rem;
+  }
+
+  /* Transition navbar section to balanced horizontal flex */
+  .footer-navbar-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1.75rem;
+    text-align: start;
+  }
+
+  .footer-logo {
+    font-size: 1.25rem;
+  }
+
+  .footer-nav-links {
+    width: auto;
+    gap: 0.65rem 1.5rem;
+    justify-content: center;
+  }
+
+  .footer-nav-link {
+    font-size: 0.92rem;
+    padding: 0.4rem 0.5rem;
+  }
+
+  .footer-nav-actions {
+    width: auto;
+    justify-content: flex-end;
+  }
+
+  /* Transition bottom section to multi-column with dynamic language alignment (>= 768px) */
+  .footer-bottom-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  /* Dynamic RTL / LTR layout alignments for Tablet & Desktop */
+  [dir="rtl"] .footer-branding {
+    text-align: right;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  [dir="rtl"] .footer-brand-name,
+  [dir="rtl"] .footer-brand-title {
+    text-align: right;
+  }
+
+  [dir="ltr"] .footer-branding {
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  [dir="ltr"] .footer-brand-name,
+  [dir="ltr"] .footer-brand-title {
+    text-align: left;
+  }
+
+  [dir="rtl"] .footer-bottom-extra {
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  [dir="rtl"] .footer-copyright {
+    text-align: left;
+  }
+
+  [dir="ltr"] .footer-bottom-extra {
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  [dir="ltr"] .footer-copyright {
+    text-align: right;
+  }
+
+  .footer-brand-name {
+    font-size: 1.02rem;
+  }
+
+  .footer-brand-title {
+    font-size: 0.85rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.82rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Laptop & Desktop View: (min-width: 1024px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  .site-footer {
+    padding: 3rem 2rem 2.25rem 2rem;
+  }
+
+  .site-footer .footer-container {
+    gap: 2rem;
+  }
+
+  .footer-quote-section {
+    max-width: 980px;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-quote-text {
+    margin-bottom: 0.65rem;
+  }
+
+  .footer-navbar-section {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    gap: 2.25rem;
+  }
+
+  .footer-logo {
+    font-size: 1.3rem;
+  }
+
+  .footer-nav-links {
+    gap: 2.25rem;
+  }
+
+  .footer-nav-link {
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom-section {
+    padding-top: 0.25rem;
+  }
+
+  .footer-brand-name {
+    font-size: 1.06rem;
+  }
+
+  .footer-brand-title {
+    font-size: 0.88rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.84rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Ultra-Wide Desktop View: (min-width: 1440px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .site-footer .footer-container {
+    max-width: 1240px;
+  }
+}

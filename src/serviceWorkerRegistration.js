@@ -8,14 +8,30 @@ const isLocalhost = Boolean(
     window.location.hostname.match(/^127(?:\.\d{1,3}){0,2}$/)
 );
 
+// Capture install events globally without adding intrusive popups
+if (typeof window !== 'undefined') {
+  window.addEventListener('beforeinstallprompt', (e) => {
+    window.deferredInstallPrompt = e;
+  });
+
+  window.addEventListener('appinstalled', () => {
+    window.deferredInstallPrompt = null;
+    // eslint-disable-next-line no-console
+    console.log('[PWA] Application successfully installed.');
+  });
+}
+
 export function register(config) {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     // The serviceWorker is in the public folder.
-    const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
-    if (publicUrl.origin !== window.location.origin) return;
+    const rawPublicUrl = process.env.PUBLIC_URL || '';
+    if (rawPublicUrl) {
+      const publicUrl = new URL(rawPublicUrl, window.location.href);
+      if (publicUrl.origin !== window.location.origin) return;
+    }
 
     window.addEventListener('load', () => {
-      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+      const swUrl = process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/service-worker.js` : './service-worker.js';
 
       if (isLocalhost) {
         // This is running on localhost. Let's check the SW.

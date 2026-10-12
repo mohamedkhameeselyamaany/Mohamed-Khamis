@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { useLanguage } from "../hooks/useLanguage";
+import TypewriterText from "../components/TypewriterText";
 import profileImg from "../assets/profile.png";
+import { Rocket, MessageSquare, Code2, Palette, Zap } from "lucide-react";
 
 import "../styles/hero.css";
 
@@ -10,6 +12,7 @@ const Hero = () => {
 
   useEffect(() => {
     const hero = heroRef.current;
+    if (!hero) return;
     const handleMouseMove = (e) => {
       const { clientX, clientY } = e;
       const { innerWidth, innerHeight } = window;
@@ -33,23 +36,25 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-text">
           <div className="hero-greeting-wrapper">
-            <span className="wave-emoji">👋</span>
+            <span className="wave-emoji" role="img" aria-label="wave">👋</span>
             <p className="hero-greeting">{t.greeting}</p>
           </div>
           <h1 className="hero-title">
-            <span className="name-highlight">Mohamed Khamis Ahmed Shehata</span>
+            <span className="name-highlight">
+              <TypewriterText text={t.heroName} speed={65} delay={150} />
+            </span>
             <br />
             <span className="gradient-text">{t.role}</span>
           </h1>
           <p className="hero-description">{t.description}</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">
-              <span className="btn-icon">🚀</span>
-              {t.viewWork}
+              <Rocket size={18} strokeWidth={2.2} className="btn-icon" />
+              <span>{t.viewWork}</span>
             </a>
             <a href="#contact" className="btn btn-secondary">
-              <span className="btn-icon">💬</span>
-              {t.contactMe}
+              <MessageSquare size={18} strokeWidth={2.2} className="btn-icon" />
+              <span>{t.contactMe}</span>
             </a>
           </div>
           <div className="hero-stats">
@@ -72,23 +77,29 @@ const Hero = () => {
         <div className="hero-image">
           <div className="image-wrapper">
             <div className="image-glow"></div>
-           <img src={profileImg} alt="Mohamed Khamis"/>
+            <img src={profileImg} alt="Mohamed Khamis" />
             <div className="floating-card card-1">
-              <span className="card-icon">⚡</span>
+              <span className="card-icon card-icon-lucide">
+                <Code2 size={20} strokeWidth={2.2} color="var(--primary-light)" />
+              </span>
               <div>
                 <span className="card-title">React</span>
                 <span className="card-sub">Expert</span>
               </div>
             </div>
             <div className="floating-card card-2">
-              <span className="card-icon">🎨</span>
+              <span className="card-icon card-icon-lucide">
+                <Palette size={20} strokeWidth={2.2} color="var(--secondary)" />
+              </span>
               <div>
                 <span className="card-title">UI/UX</span>
                 <span className="card-sub">Designer</span>
               </div>
             </div>
             <div className="floating-card card-3">
-              <span className="card-icon">🚀</span>
+              <span className="card-icon card-icon-lucide">
+                <Zap size={20} strokeWidth={2.2} color="var(--accent)" />
+              </span>
               <div>
                 <span className="card-title">Performance</span>
                 <span className="card-sub">Optimized</span>
