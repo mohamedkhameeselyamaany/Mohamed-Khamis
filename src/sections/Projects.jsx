@@ -42,9 +42,12 @@ const sortProjectsList = (list) => {
 const getProjectImageUrl = (img) => {
   if (!img) return "";
   if (img.startsWith("http://") || img.startsWith("https://")) return img;
-  const publicUrl = (process.env.PUBLIC_URL || "").replace(/\/+$/, "");
   const cleanImg = img.replace(/^\/+/, "");
-  return encodeURI(`${publicUrl}/images/${cleanImg}`);
+  let base = (process.env.PUBLIC_URL || "").replace(/\/+$/, "");
+  if (!base && typeof window !== "undefined" && window.location.pathname.startsWith("/Mohamed-Khamis")) {
+    base = "/Mohamed-Khamis";
+  }
+  return encodeURI(`${base}/images/${cleanImg}`);
 };
 
 const Projects = () => {
@@ -118,15 +121,16 @@ const Projects = () => {
                   <img
                     src={getProjectImageUrl(project.image)}
                     alt={lang === "ar" ? project.title : project.titleEn}
-                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       const target = e.currentTarget;
+                      const clean = (project.image || "").replace(/^\/+/, "");
                       if (!target.dataset.triedFallback1) {
                         target.dataset.triedFallback1 = "true";
-                        target.src = encodeURI(`./images/${project.image}`);
+                        target.src = encodeURI(`/Mohamed-Khamis/images/${clean}`);
                       } else if (!target.dataset.triedFallback2) {
                         target.dataset.triedFallback2 = "true";
-                        target.src = encodeURI(`/images/${project.image}`);
+                        target.src = encodeURI(`/images/${clean}`);
                       }
                     }}
                   />

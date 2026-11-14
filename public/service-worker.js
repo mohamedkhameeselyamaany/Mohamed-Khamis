@@ -14,7 +14,7 @@
  * - Skip requests that look sensitive (Authorization header)
  */
 
-const SW_VERSION = "v1";
+const SW_VERSION = "v2";
 
 const CACHE = {
   appShell: `app-shell-${SW_VERSION}`,
@@ -199,7 +199,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Images: Cache First
+  // Images: Cache First with resilient network fetch
   if (dest === "image") {
     event.respondWith(
       (async () => {
@@ -207,9 +207,15 @@ self.addEventListener("fetch", (event) => {
         const cached = await cache.match(req);
         if (cached) return cached;
 
-        const res = await fetch(req);
-        await cachePut(CACHE.images, req, res.clone());
-        return res;
+        try {
+          const res = await fetch(req);
+          if (res && res.ok) {
+            await cachePut(CACHE.images, req, res.clone());
+          }
+          return res;
+        } catch (err) {
+          return cached || Response.error();
+        }
       })()
     );
     return;
