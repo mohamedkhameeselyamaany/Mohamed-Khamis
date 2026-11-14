@@ -87,13 +87,14 @@ const Footer = () => {
         <div className="footer-bottom-section">
           <div className="footer-branding">
             <div className="footer-brand-name">
-              <strong>{lang === "ar" ? "محمد خميس" : "Mohamed Khamis"}</strong>
+              <strong>{lang === "ar" ? " البشمهندس محمد خميس" : " Eng Mohamed Khamis"}</strong>
             </div>
             <div className="footer-brand-title">
-              {lang === "ar"
-                ? "مطور واجهات فرونت إند & مصمم يو إكس"
-                : "Front-End Developer & UI/UX Designer"}
+              {t.footerBioTitle}
             </div>
+            <p className="footer-brand-desc">
+              {t.footerBioDesc}
+            </p>
           </div>
 
           <div className="footer-bottom-extra">

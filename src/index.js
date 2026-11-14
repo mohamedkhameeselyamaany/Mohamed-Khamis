@@ -9,6 +9,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-// تفعيل Service Worker للإنتاج لتمكين خاصية PWA والتثبيت على الموبايل والديسكتوب
-// استراتيجية Network-First تضمن جلب أي تحديث فورياً دون بقاء كاش قديم
-serviceWorkerRegistration.register();
+// تفعيل Service Worker في بيئة الإنتاج فقط لتمكين خاصية PWA والتثبيت دون حجب الـ Hot Reload محلياً
+if (process.env.NODE_ENV === "production") {
+  serviceWorkerRegistration.register();
+} else {
+  serviceWorkerRegistration.unregister();
+}

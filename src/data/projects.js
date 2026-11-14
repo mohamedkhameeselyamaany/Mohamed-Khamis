@@ -9,7 +9,10 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://mohamedkhameeselyamaany.github.io/HARD-WHER/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/HARD-WHER.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2025-01-10",
+    isFeatured: false,
+    featuredOrder: null
   },
   {
     id: 2,
@@ -18,10 +21,13 @@ export const projects = [
     description: "موقع متخصص في وصفات أكل صحية وسهلة، يقدم أفكار متنوعة تناسب جميع الأذواق مع التركيز على التغذية السليمة.",
     descriptionEn: "A website specializing in healthy and easy food recipes, offering diverse ideas to suit all tastes with a focus on proper nutrition.",
     image: "Healthy.jpeg",
-    tags: ["HTML","CSS"],
-    liveUrl: " https://mohamedkhameeselyamaany.github.io/helthy/",
+    tags: ["HTML", "CSS"],
+    liveUrl: "https://mohamedkhameeselyamaany.github.io/helthy/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/helthy.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2025-02-15",
+    isFeatured: false,
+    featuredOrder: null
   },
   {
     id: 3,
@@ -30,10 +36,13 @@ export const projects = [
     description: "موقع متخصص في البرمجة يقدّم دروسًا تعليمية شاملة وموارد احترافية تساعد المبتدئين والمحترفين على تطوير مهاراتهم التقنية. نوفر شروحات مبسطة، أمثلة عملية، أحدث التقنيات، ومسارات تعلم متكاملة في مجالات تطوير الويب، التطبيقات، وقواعد البيانات، بهدف تسهيل رحلة التعلم وبناء مستقبل قوي في عالم البرمجة.",
     descriptionEn: "A website specializing in programming, offering comprehensive tutorials and professional resources to help beginners and experienced programmers develop their technical skills. We provide simplified explanations, practical examples, the latest technologies, and integrated learning paths in web development, applications, and databases, aiming to facilitate the learning journey and build a strong future in the world of programming.",
     image: "Brograming.jpeg",
-    tags: ["HTML", "CSS",  "JavaScript"],
+    tags: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://mohamedkhameeselyamaany.github.io/programming-site/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/programming-site.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2025-03-20",
+    isFeatured: true,
+    featuredOrder: 4
   },
   {
     id: 4,
@@ -45,7 +54,10 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://mohamedkhameeselyamaany.github.io/gem-System/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/gem-System.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2025-04-25",
+    isFeatured: false,
+    featuredOrder: null
   },
   {
     id: 5,
@@ -57,7 +69,10 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://mohamedkhameeselyamaany.github.io/Sanad/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/Sanad.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2026-11-14",
+    isFeatured: true,
+    featuredOrder: 3
   },
   {
     id: 6,
@@ -67,9 +82,12 @@ export const projects = [
     descriptionEn: "A modern website dedicated to showcasing coffee shop products and providing a unique experience for coffee lovers, featuring a diverse selection of premium coffees and hot and cold beverages. Its attractive and user-friendly design allows visitors to easily explore products, learn about details and offers, reflecting the brand's quality and providing customers with an enjoyable digital experience.",
     image: "Coffee.jpeg",
     tags: ["HTML", "CSS", "JavaScript"],
-    liveUrl: " https://mohamedkhameeselyamaany.github.io/Fully-Responsive-CoffeeShop-/",
+    liveUrl: "https://mohamedkhameeselyamaany.github.io/Fully-Responsive-CoffeeShop-/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/Fully-Responsive-CoffeeShop-.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2025-06-15",
+    isFeatured: false,
+    featuredOrder: null
   },
   {
     id: 7,
@@ -78,10 +96,13 @@ export const projects = [
     description: "موقع عصري وبسيط يهدف إلى تسهيل الوصول إلى مختلف الخدمات بكل سرعة وسهولة، حيث يتيح للمستخدم تصفح الخدمات المتاحة واختيار الخدمة المناسبة ثم تحديد الفني أو الصنايعي المطلوب بكل مرونة. يتميز بتصميم خفيف وسهل الاستخدام يوفر تجربة سلسة تساعد العملاء على إنجاز طلباتهم بسرعة وراحة.",
     descriptionEn: "A modern and user-friendly website designed to facilitate quick and easy access to various services. It allows users to browse available services, select the appropriate one, and then flexibly specify the required technician or tradesperson. Featuring a lightweight and intuitive design, it provides a seamless experience, helping customers complete their requests quickly and conveniently.",
     image: "Sanayi.jpeg",
-    tags: ["HTML", "CSS","Responsive"],
+    tags: ["HTML", "CSS", "Responsive"],
     liveUrl: "https://mohamedkhameeselyamaany.github.io/sanaye/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/sanaye.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2025-07-20",
+    isFeatured: false,
+    featuredOrder: null
   },
   {
     id: 8,
@@ -93,7 +114,10 @@ export const projects = [
     tags: ["HTML", "CSS"],
     liveUrl: "https://mohamedkhameeselyamaany.github.io/cinima/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/cinima.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2025-08-15",
+    isFeatured: false,
+    featuredOrder: null
   },
   {
     id: 9,
@@ -105,7 +129,10 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://mohamedkhameeselyamaany.github.io/Ali-Khamees-Portfolio/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/Ali-Khamees-Portfolio.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2025-09-10",
+    isFeatured: false,
+    featuredOrder: null
   },
   {
     id: 10,
@@ -115,9 +142,12 @@ export const projects = [
     descriptionEn: "A personal portfolio website designed to showcase past work and completed projects professionally, highlighting skills and experience across various fields. The site aims to present a distinctive professional identity, showcasing expertise and creativity in an engaging way that builds trust and opens new opportunities.",
     image: "My website.jpeg",
     tags: ["HTML", "CSS", "Responsive"],
-    liveUrl: " https://mohamedkhameeselyamaany.github.io/Mohamed-khameess-p/",
+    liveUrl: "https://mohamedkhameeselyamaany.github.io/Mohamed-khameess-p/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/Mohamed-khameess-p.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2025-10-05",
+    isFeatured: false,
+    featuredOrder: null
   },
   {
     id: 11,
@@ -126,12 +156,14 @@ export const projects = [
     description: "موقع دعوة زفاف إلكتروني مصمم بأسلوب أنيق وعصري لتقديم تفاصيل الحفل بطريقة مميزة وسهلة. يتيح للمدعوين التعرف على موعد ومكان المناسبة، ومشاركة أجمل اللحظات في تصميم راقٍ يعكس فرحة الحدث ويمنح الدعوة طابعًا عصريًا لا يُنسى.",
     descriptionEn: "An elegantly designed and modern wedding invitation website to present the details of the event in a distinctive and easy way. It allows guests to learn the date and location of the occasion and share the most beautiful moments in a sophisticated design that reflects the joy of the event and gives the invitation a modern and unforgettable character.",
     image: "invtation.jpeg",
-    tags: ["HTML", "CSS", "JavaScript" ,"Responsive"],
-    liveUrl: "  https://mohamedkhameeselyamaany.github.io/weding-invitation/",
+    tags: ["HTML", "CSS", "JavaScript", "Responsive"],
+    liveUrl: "https://mohamedkhameeselyamaany.github.io/weding-invitation/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/weding-invitation.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2025-11-01",
+    isFeatured: false,
+    featuredOrder: null
   },
-
   {
     id: 12,
     title: "موقع لدعوه فرح",
@@ -139,12 +171,14 @@ export const projects = [
     description: "موقع دعوة زفاف إلكتروني مصمم بأسلوب أنيق وعصري لتقديم تفاصيل الحفل بطريقة مميزة وسهلة. يتيح للمدعوين التعرف على موعد ومكان المناسبة، ومشاركة أجمل اللحظات في تصميم راقٍ يعكس فرحة الحدث ويمنح الدعوة طابعًا عصريًا لا يُنسى.",
     descriptionEn: "An elegantly designed and modern wedding invitation website to present the details of the event in a distinctive and easy way. It allows guests to learn the date and location of the occasion and share the most beautiful moments in a sophisticated design that reflects the joy of the event and gives the invitation a modern and unforgettable character.",
     image: "invtation.jpeg",
-    tags: ["HTML", "CSS", "JavaScript" ,"Responsive"],
-    liveUrl: "  https://mohamedkhameeselyamaany.github.io/weding-invitation/",
+    tags: ["HTML", "CSS", "JavaScript", "Responsive"],
+    liveUrl: "https://mohamedkhameeselyamaany.github.io/weding-invitation/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/weding-invitation.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2025-11-20",
+    isFeatured: false,
+    featuredOrder: null
   },
-
   {
     id: 13,
     title: "🏠 موقع نقل أثاث وموبيليا",
@@ -152,23 +186,27 @@ export const projects = [
     description: "موقع إلكتروني احترافي متخصص في خدمات نقل الأثاث والموبيليا، مصمم بواجهة حديثة وسريعة الاستجابة، ويغطي جميع خدمات نقل العفش المتعارف عليها في السوق، مع تجربة مستخدم سلسة تسهّل على العملاء طلب الخدمة والتواصل بسهولة.",
     descriptionEn: "A professional website specializing in furniture moving services, designed with a modern and responsive interface, covering all the furniture moving services known in the market, with a smooth user experience that makes it easy for customers to request the service and communicate easily.",
     image: "Furniture moving.jpg",
-    tags: ["React.js", "React Router", "HTML5 "," Progressive Web App (PWA)", "JavaScript(ES6+)" ,"Responsive Design"],
-    liveUrl: " https://mohamedkhameeselyamaany.github.io/Furniture-moving/",
+    tags: ["React.js", "React Router", "HTML5 ", " Progressive Web App (PWA)", "JavaScript(ES6+)", "Responsive Design"],
+    liveUrl: "https://mohamedkhameeselyamaany.github.io/Furniture-moving/",
     githubUrl: "https://github.com/mohamedkhameeselyamaany/Furniture-moving.git",
-    category: "frontend"
+    category: "frontend",
+    createdAt: "2026-07-04",
+    isFeatured: true,
+    featuredOrder: 2
   },
-
-   {
+  {
     id: 14,
     title: "موقع دأب",
     titleEn: "Daab",
     description: "موقع دأب  هي شركة حلول تجارية وصناعية سعودية، تربط الأعمال والموارد والفرص من خلال شراكات موثوقة وحلول عملية وفهم عميق للسوق المحلي. (حلول عملية | طموح إقليمي | جذور محلية في السعودية) ",
     descriptionEn: "Daab is a Saudi commercial and industrial solutions company that connects businesses, resources, and opportunities through trusted partnerships, practical solutions, and a deep understanding of the local market. (Practical solutions | Regional ambition | Local roots in Saudi Arabia)",
     image: "daab.jpg",
-    tags: [ "Next.js","React.js", "React Router", "HTML5 ", "JavaScript(ES6+)" ,"Responsive Design","Tailwind Css"],
-    liveUrl: " https://daab.sa",
+    tags: ["Next.js", "React.js", "React Router", "HTML5 ", "JavaScript(ES6+)", "Responsive Design", "Tailwind Css"],
+    liveUrl: "https://daab.sa",
     githubUrl: "https://daab.sa",
-    category: "Fullstack"
+    category: "Full Stack",
+    createdAt: "2026-10-11",
+    isFeatured: true,
+    featuredOrder: 1
   }
-
 ];

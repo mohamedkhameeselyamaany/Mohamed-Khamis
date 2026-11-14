@@ -65,6 +65,8 @@ const translations = {
     scrollToContact: "تواصل معي",
     scrollToTop: "العودة للأعلى",
     footerQuote: "«إن الله يحب إذا عمل أحدكم عملاً أن يتقنه» — ﴿ وَقُلِ اعْمَلُوا فَسَيَرَى اللَّهُ عَمَلَكُمْ ﴾ نسعى لأن يكون لكل عملٍ أثر، ولكل فكرةٍ قيمة، ولكل تفصيلةٍ حكاية؛ فالإبداع ليس مجرد ما نُنجزه، بل كيف نُنجزه وبأي روح.",
+    footerBioTitle: "مطور واجهات أمامية (Front-End Developer) ومصمم واجهات وتجربة المستخدم (UI/UX Designer).",
+    footerBioDesc: "أجمع بين التطوير البرمجي والتصميم المتمحور حول المستخدم لبناء واجهات ويب عصرية، تفاعلية، سهلة الاستخدام، ومتوافقة مع مختلف الأجهزة.",
     footerCredit: "",
     thanks: "شكراً لزيارتك"
   },
@@ -130,6 +132,8 @@ const translations = {
     scrollToContact: "Contact Me",
     scrollToTop: "Back to Top",
     footerQuote: "“God loves that when one does work, they excel in it” — ﴿ And say: Work, for God will see your deeds ﴾ We strive for every work to leave an impact, every idea to have value, and every detail to tell a story; creativity is not just what we achieve, but how we achieve it and with what spirit.",
+    footerBioTitle: "Front-End Developer & UI/UX Designer.",
+    footerBioDesc: "Combining software development with user-centered design to build modern, interactive, user-friendly web interfaces compatible with all devices.",
     footerCredit: "",
     thanks: "Thank you for visiting"
   }

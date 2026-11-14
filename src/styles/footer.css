@@ -212,11 +212,23 @@
 }
 
 .footer-brand-title {
-  font-size: clamp(0.82rem, 0.9vw + 0.45rem, 0.9rem);
+  font-size: clamp(0.86rem, 1vw + 0.45rem, 0.96rem);
+  color: var(--primary-light);
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 0.35rem;
+  text-align: center;
+}
+
+.footer-brand-desc {
+  font-size: clamp(0.8rem, 0.85vw + 0.42rem, 0.88rem);
   color: var(--text-muted);
   font-weight: 500;
-  line-height: 1.45;
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0 auto;
   text-align: center;
+  text-wrap: balance;
 }
 
 .footer-bottom-extra {
@@ -297,7 +309,8 @@
   }
 
   [dir="rtl"] .footer-brand-name,
-  [dir="rtl"] .footer-brand-title {
+  [dir="rtl"] .footer-brand-title,
+  [dir="rtl"] .footer-brand-desc {
     text-align: right;
   }
 
@@ -309,7 +322,8 @@
   }
 
   [dir="ltr"] .footer-brand-name,
-  [dir="ltr"] .footer-brand-title {
+  [dir="ltr"] .footer-brand-title,
+  [dir="ltr"] .footer-brand-desc {
     text-align: left;
   }
 
