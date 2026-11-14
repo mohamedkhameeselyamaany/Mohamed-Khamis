@@ -208,5 +208,20 @@ export const projects = [
     createdAt: "2026-10-11",
     isFeatured: true,
     featuredOrder: 1
+  },
+    {
+    id: 15,
+    title: "موقع نوفاوير",
+    titleEn: "Nova Wear",
+    description: "نوفا وير  هو متجر إلكتروني متكامل متخصص في بيع الملابس الرجالية والنسائية والأطفال والإكسسوارات، يوفّر تجربة تسوّق رقمية شاملة تتيح للعملاء استعراض المنتجات والبحث عنها وتصنيفها وفلترتها وإتمام عمليات الشراء والطلبات مع خدمات الشحن والتوصيل، إلى جانب لوحة تحكم إدارية متكاملة لإدارة المنتجات والأقسام والطلبات والعملاء والرسائل والاشتراكات البريدية، مع دعم اللغتين العربية والإنجليزية وتعدد العملات، مما يجعله منصة تجارة إلكترونية متكاملة تجمع بين سهولة الاستخدام ومرونة الإدارة واحترافية تجربة التسوق.",
+    descriptionEn: "NovaWear is a comprehensive online store specializing in apparel for men, women, and children, as well as accessories. It offers an all-encompassing digital shopping experience, allowing customers to browse, search, categorize, and filter products, and complete purchases—all supported by shipping and delivery services. The platform also features a robust administrative dashboard for managing products, categories, orders, customers, communications, and email subscriptions. With support for both Arabic and English, as well as multiple currencies, NovaWear serves as a complete e-commerce solution that combines ease of use, flexible management, and a professional shopping experience.",
+    image: "novawear.jpg",
+    tags: ["Next.js", "React.js","TypeScript", "React Router", "JavaScript(ES6+)", "Responsive Design", "Tailwind Css"],
+    liveUrl: " https://mohamedkhameeselyamaany.github.io/novawear/",
+    githubUrl: "https://github.com/mohamedkhameeselyamaany/novawear.git",
+    category: "Full Stack",
+    createdAt: "2026-11-14",
+    isFeatured: true,
+    featuredOrder: 1
   }
 ];

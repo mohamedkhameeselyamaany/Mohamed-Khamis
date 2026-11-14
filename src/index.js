@@ -9,9 +9,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-// تفعيل Service Worker في بيئة الإنتاج فقط لتمكين خاصية PWA والتثبيت دون حجب الـ Hot Reload محلياً
+// تفعيل Service Worker في بيئة الإنتاج فقط لتمكين خاصية PWA والتثبيت والعمل أوفلاين دون حجب الـ Hot Reload محلياً
 if (process.env.NODE_ENV === "production") {
-  serviceWorkerRegistration.register();
+  serviceWorkerRegistration.register({
+    onUpdate: (registration) => {
+      window.dispatchEvent(
+        new CustomEvent("pwa_update_available", { detail: registration })
+      );
+    },
+  });
 } else {
   serviceWorkerRegistration.unregister();
 }

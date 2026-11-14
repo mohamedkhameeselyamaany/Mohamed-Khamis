@@ -1,0 +1,325 @@
+/* ============================================================
+   PWA Components Styles: Install Button, Offline Banner, Update Toast, iOS Modal
+   Designed to integrate seamlessly with Portfolio CSS variables
+   ============================================================ */
+
+/* 1. Install Button in Navbar / Actions */
+.pwa-install-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.pwa-install-btn svg {
+  color: var(--primary);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.pwa-install-btn:hover {
+  border-color: var(--primary-light);
+  background: rgba(99, 102, 241, 0.16);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 22px -5px rgba(99, 102, 241, 0.35), 0 0 15px rgba(99, 102, 241, 0.2);
+}
+
+.pwa-install-btn:hover svg {
+  transform: translateY(-2px);
+}
+
+.pwa-install-btn:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* 2. Floating Offline / Online Status Banner */
+.pwa-status-banner-wrap {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  pointer-events: none;
+  padding: 0 1rem;
+}
+
+.pwa-status-banner {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  animation: pwaBannerSlideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: 90vw;
+}
+
+.pwa-status-banner.offline {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: #fbbf24;
+}
+
+.pwa-status-banner.online {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.45);
+  color: #34d399;
+}
+
+.pwa-status-banner svg {
+  flex-shrink: 0;
+}
+
+@keyframes pwaBannerSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 3. New Version Update Toast */
+.pwa-update-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1001;
+  background: var(--bg-card);
+  border: 1px solid var(--primary-light);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.5), 0 0 25px rgba(99, 102, 241, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  animation: pwaToastSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: min(420px, 92vw);
+}
+
+[dir="rtl"] .pwa-update-toast {
+  right: auto;
+  left: 24px;
+}
+
+.pwa-update-toast-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.pwa-update-toast-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.pwa-update-toast-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pwa-update-btn {
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.pwa-update-btn:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+.pwa-dismiss-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.pwa-dismiss-btn:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+@keyframes pwaToastSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 4. iOS Safari Add to Home Screen Modal */
+.pwa-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: pwaFadeIn 0.3s ease;
+}
+
+.pwa-modal-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1.75rem;
+  width: min(440px, 100%);
+  box-shadow: var(--shadow-lg);
+  color: var(--text);
+  position: relative;
+  animation: pwaModalZoom 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pwa-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.pwa-modal-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text);
+}
+
+.pwa-modal-close {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.pwa-modal-close:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.pwa-modal-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pwa-modal-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.pwa-step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+@keyframes pwaFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pwaModalZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pwa-install-btn {
+    padding: 0 0.75rem;
+    font-size: 0.8rem;
+    height: 40px;
+  }
+  .pwa-install-btn span {
+    display: none; /* Icon-only on mobile navbar to save space */
+  }
+  .pwa-update-toast {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .pwa-update-toast-actions {
+    justify-content: flex-end;
+  }
+}

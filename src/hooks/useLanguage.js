@@ -68,7 +68,18 @@ const translations = {
     footerBioTitle: "مطور واجهات أمامية (Front-End Developer) ومصمم واجهات وتجربة المستخدم (UI/UX Designer).",
     footerBioDesc: "أجمع بين التطوير البرمجي والتصميم المتمحور حول المستخدم لبناء واجهات ويب عصرية، تفاعلية، سهلة الاستخدام، ومتوافقة مع مختلف الأجهزة.",
     footerCredit: "",
-    thanks: "شكراً لزيارتك"
+    thanks: "شكراً لزيارتك",
+    installApp: "تثبيت التطبيق",
+    appInstalled: "التطبيق مثبت",
+    offlineStatus: "أنت تتصفح بدون اتصال بالإنترنت (المحتوى متاح محلياً)",
+    onlineRestored: "تمت استعادة الاتصال بالإنترنت بنجاح",
+    newVersionAvailable: "يتوفر تحديث جديد للموقع",
+    updateNow: "تحديث الآن",
+    dismiss: "تجاهل",
+    iosInstallTitle: "تثبيت التطبيق على جهازك",
+    iosInstallStep1: "اضغط على زر المشاركة (Share) في أسفل المتصفح",
+    iosInstallStep2: "مرر للأسفل واختر «إضافة إلى الشاشة الرئيسية» (Add to Home Screen)",
+    close: "إغلاق"
   },
   en: {
     home: "Home",
@@ -135,7 +146,18 @@ const translations = {
     footerBioTitle: "Front-End Developer & UI/UX Designer.",
     footerBioDesc: "Combining software development with user-centered design to build modern, interactive, user-friendly web interfaces compatible with all devices.",
     footerCredit: "",
-    thanks: "Thank you for visiting"
+    thanks: "Thank you for visiting",
+    installApp: "Install App",
+    appInstalled: "App Installed",
+    offlineStatus: "You are browsing offline (Content available locally)",
+    onlineRestored: "Internet connection restored successfully",
+    newVersionAvailable: "A new version of the site is available",
+    updateNow: "Update Now",
+    dismiss: "Dismiss",
+    iosInstallTitle: "Install App on Your Device",
+    iosInstallStep1: "Tap the Share button at the bottom of Safari",
+    iosInstallStep2: "Scroll down and tap 'Add to Home Screen'",
+    close: "Close"
   }
 };
 

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useDarkMode } from "../hooks/useDarkMode";
 import { useLanguage } from "../hooks/useLanguage";
 import { Sun, Moon } from "lucide-react";
+import InstallPWA from "./InstallPWA";
 import "../styles/navbar.css";
 
 const Navbar = () => {
@@ -75,6 +76,7 @@ const Navbar = () => {
         </div>
 
         <div className="nav-actions">
+          <InstallPWA />
           <button className="lang-toggle" onClick={toggleLanguage} aria-label="Toggle language">
             {lang === "ar" ? "EN" : "عربي"}
           </button>
