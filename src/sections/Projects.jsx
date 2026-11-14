@@ -38,6 +38,15 @@ const sortProjectsList = (list) => {
   });
 };
 
+// معالجة مسار الصورة لضمان عملها 100% على GitHub Pages (Subpath) وعلى Vercel والمحلي مع دعم المسافات
+const getProjectImageUrl = (img) => {
+  if (!img) return "";
+  if (img.startsWith("http://") || img.startsWith("https://")) return img;
+  const publicUrl = (process.env.PUBLIC_URL || "").replace(/\/+$/, "");
+  const cleanImg = img.replace(/^\/+/, "");
+  return encodeURI(`${publicUrl}/images/${cleanImg}`);
+};
+
 const Projects = () => {
   const { t, lang } = useLanguage();
   const [filter, setFilter] = useState("all");
@@ -107,13 +116,19 @@ const Projects = () => {
               >
                 <div className="project-image">
                   <img
-                    src={
-                      project.image.startsWith("http")
-                        ? project.image
-                        : `${process.env.PUBLIC_URL || ""}/images/${project.image}`
-                    }
+                    src={getProjectImageUrl(project.image)}
                     alt={lang === "ar" ? project.title : project.titleEn}
                     loading="lazy"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.dataset.triedFallback1) {
+                        target.dataset.triedFallback1 = "true";
+                        target.src = encodeURI(`./images/${project.image}`);
+                      } else if (!target.dataset.triedFallback2) {
+                        target.dataset.triedFallback2 = "true";
+                        target.src = encodeURI(`/images/${project.image}`);
+                      }
+                    }}
                   />
                   <div className="project-category-badge">
                     {(project.category || "").toLowerCase().includes("full")
